@@ -23,3 +23,5 @@ RUN apt-get -y install --install-recommends winehq-stable
 # Add execuables
 ADD src/*.exe /usr/bin/
 RUN chmod 755 /usr/bin/*.exe
+
+RUN wine cmd.exe /c ver

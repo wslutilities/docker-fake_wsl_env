@@ -2,15 +2,17 @@ FROM debian:stretch
 
 MAINTAINER Patrick Wu <wotingwu@live.com>
 
-RUN dpkg --add-architecture i386
-RUN apt -y update
-RUN apt -y install git-core build-essential wget
+ADD src/fake-wsl-release /etc/
 
-ADD src/winehd.list /etc/apt/sources.list.d/
+RUN dpkg --add-architecture i386
+RUN apt-get -y update
+RUN apt-get -y install git-core build-essential wget
+
+ADD winehq.list /etc/apt/sources.list.d/
 
 RUN wget -nc https://dl.winehq.org/wine-builds/Release.key \
       && apt-key add Release.key \
       && rm Release.key
 
-RUN apt -y update
-RUN apt -y install --install-recommends winehq-stable
+RUN apt-get -y update
+RUN apt-get -y install --install-recommends winehq-stable

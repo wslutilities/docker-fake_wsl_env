@@ -6,9 +6,9 @@ ADD src/fake-wsl-release /etc/
 
 RUN dpkg --add-architecture i386
 RUN apt-get -y update
-RUN apt-get -y install git-core build-essential wget
+RUN apt-get -y install git-core wget apt-transport-https gnupg
 
-ADD winehq.list /etc/apt/sources.list.d/
+ADD src/winehq.list /etc/apt/sources.list.d/
 
 RUN wget -nc https://dl.winehq.org/wine-builds/Release.key \
       && apt-key add Release.key \

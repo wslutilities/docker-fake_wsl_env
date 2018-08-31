@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-git clone git://source.winehq.org/git/wine.git
-cd wine
-sudo apt update
-sudo apt install build-essential
-./configure
-./make
+dpkg --add-architecture i386
+apt -y update
+apt -y install git-core build-essential
+
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+rm Release.key
+

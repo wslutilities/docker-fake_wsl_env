@@ -17,6 +17,19 @@ Well, because there is currently not a good way to test WSL-related projects on 
 - Windows Server Docker do not support installing WSL feature(asks for reboot but will hang on reboot);
 - All CIs do not provide WSL support, including AppVeyor([Issue #1295](https://github.com/appveyor/ci/issues/1295)).
 
+## What's in this docker?
+
+**Exec.**
+- cmd.exe
+- powershell.exe
+- reg.exe
+- explorer.exe
+- xcopy.exe
+
+**Folder/Files**
+- /etc/fake-wsl-release
+- /mnt/c/
+
 ## License
 
 LGPL v 3.0.

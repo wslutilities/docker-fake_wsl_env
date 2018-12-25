@@ -1,5 +1,7 @@
 # Fake WSL environment
 
+![Docker Pulls](https://badgen.net/docker/pulls/patrick30602/fake_wsl_env)
+
 A fake WSL environment for preforming WSL specific tasks in Docker or CI.
 
 <https://hub.docker.com/r/patrick330602/fake_wsl_env/>
@@ -32,4 +34,4 @@ Well, because there is currently not a good way to test WSL-related projects on 
 
 ## License
 
-LGPL v 3.0.
+GPL v 3.0.

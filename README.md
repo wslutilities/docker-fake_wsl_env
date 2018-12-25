@@ -1,6 +1,6 @@
 # Fake WSL environment
 
-![Docker Pulls](https://badgen.net/docker/pulls/patrick33330602/fake_wsl_env)
+![Docker Pulls](https://badgen.net/docker/pulls/patrick330602/fake_wsl_env)
 
 A fake WSL environment for preforming WSL specific tasks in Docker or CI.
 

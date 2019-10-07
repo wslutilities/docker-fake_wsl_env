@@ -18,6 +18,7 @@ Well, because there is currently not a good way to test WSL-related projects on 
 
 - Windows Server Docker do not support installing WSL feature(asks for reboot but will hang on reboot);
 - All CIs do not provide WSL support, including AppVeyor([Issue #1295](https://github.com/appveyor/ci/issues/1295)).
+  - Currently, AppVeyor have started testing WSL on CI. You can request a test from the above link. 
 
 ## What's in this docker?
 
